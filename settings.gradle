@@ -1,3 +1,4 @@
 rootProject.name = 'flixel-gdx'
 
 include "flixel-core"
+include "flixel-desktop"
