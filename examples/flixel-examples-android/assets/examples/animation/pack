@@ -1,0 +1,60 @@
+animation1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+flixellogo
+  rotate: false
+  xy: 2, 2
+  size: 80, 16
+  orig: 80, 16
+  offset: 0, 0
+  index: -1
+chest
+  rotate: true
+  xy: 59, 214
+  size: 198, 23
+  orig: 198, 23
+  offset: 0, 0
+  index: -1
+zombietxai
+  rotate: true
+  xy: 84, 2
+  size: 432, 41
+  orig: 432, 41
+  offset: 0, 0
+  index: -1
+droid
+  rotate: true
+  xy: 43, 436
+  size: 70, 14
+  orig: 70, 14
+  offset: 0, 0
+  index: -1
+zombie2
+  rotate: true
+  xy: 2, 436
+  size: 72, 39
+  orig: 72, 39
+  offset: 0, 0
+  index: -1
+bat
+  rotate: true
+  xy: 59, 414
+  size: 56, 23
+  orig: 56, 23
+  offset: 0, 0
+  index: -1
+zombie3
+  rotate: true
+  xy: 43, 20
+  size: 192, 39
+  orig: 192, 39
+  offset: 0, 0
+  index: -1
+greenpotion
+  rotate: false
+  xy: 59, 472
+  size: 33, 33
+  orig: 33, 33
+  offset: 0, 0
+  index: -1

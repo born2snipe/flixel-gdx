@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":flixel-desktop")
+    compile project(":examples/flixel-examples-core")
+}

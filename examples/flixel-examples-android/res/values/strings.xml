@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">flixel-gdx examples</string>
+    <string-array name="demos">
+        <item>PathFinding</item>
+        <item>FlxCollisions</item>
+        <item>FlxTilemapDemo</item>
+        <item>Particles</item>
+        <item>SaveDemo</item>
+        <item>AnimationDemo</item>
+        <item>CollisionDemo</item>
+        <item>ThousandParticlesDemo</item>
+        <item>BlurDemo</item>
+        <item>BitmapfontDemo</item>
+        <item>BitmapFontDistance</item>
+        <item>MultiTouchDemo</item>
+        <item>DragAndDropDemo</item>
+        <item>CameraEffectsDemo</item>
+        <item>AudioDemo</item>
+        <item>TileDemo</item>
+        <item>EZPlatformer</item>
+        <item>TiledMap2Demo</item>
+        <item>AnalogDemo</item>
+        <item>SensorDemo</item>
+        <item>Mode</item>
+        <item>FlxInvaders</item>
+        <item>TweenDemo</item>
+        <item>UserInterfaceDemo</item>
+        <item>VibrationDemo</item>
+        <item>BomberPlanet</item>
+        <item>QuadTreeDemo</item>
+        <item>SplashScreen</item>
+        <item>Performance</item>
+        <item>GestureDemo</item>
+        <item>GLES20Demo</item>
+        <item>BlendDemo</item>
+        <item>ControllerDemo</item>
+        <item>Flappybalt</item>
+    </string-array>
+</resources>

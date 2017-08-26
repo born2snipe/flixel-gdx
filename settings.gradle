@@ -3,3 +3,6 @@ rootProject.name = 'flixel-gdx'
 include "flixel-core"
 include "flixel-desktop"
 include "flixel-robovm"
+
+include "examples/flixel-examples-core"
+include "examples/flixel-examples-desktop"
