@@ -5,6 +5,10 @@ allprojects {
     apply plugin: "idea"
     apply plugin: "eclipse"
 
+    // required for the GWT stuff to work
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+
     ext {
         gdxVersion = "1.7.1"
     }
