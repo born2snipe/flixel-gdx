@@ -16,3 +16,11 @@ war/
 *.zip
 
 Thumbs.db
+
+# gradle
+build
+.gradle
+
+# intellij
+.idea
+*.iml

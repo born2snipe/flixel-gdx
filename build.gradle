@@ -1,0 +1,19 @@
+
+
+allprojects {
+    apply plugin: "java"
+    apply plugin: "idea"
+    apply plugin: "eclipse"
+
+    ext {
+        gdxVersion = "1.7.1"
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven { url "https://oss.sonatype.org/content/repositories/releases/" }
+    }
+}
