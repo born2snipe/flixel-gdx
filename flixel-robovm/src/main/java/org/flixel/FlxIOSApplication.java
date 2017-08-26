@@ -1,11 +1,10 @@
 package org.flixel;
 
-import org.robovm.apple.foundation.NSAutoreleasePool;
-import org.robovm.apple.uikit.UIApplication;
- 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
+import org.robovm.apple.foundation.NSAutoreleasePool;
+import org.robovm.apple.uikit.UIApplication;
 
 /**
  * Launch your iOS app by calling {@link #main(String[], FlxGame)}.
@@ -31,9 +30,8 @@ import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
  */
 public class FlxIOSApplication extends IOSApplication.Delegate
 {
-	private static FlxGame _game;
-	
 	public static final IOSApplicationConfiguration config = createConfig();
+	private static FlxGame _game;
 	
 	/**
 	 * Run a given {@link FlxGame} instance as an iOS app with a given set
@@ -49,16 +47,15 @@ public class FlxIOSApplication extends IOSApplication.Delegate
 		pool.close();
 	}
 
-	@Override
-	protected IOSApplication createApplication()
-	{		
-		return new IOSApplication((ApplicationListener) _game.stage, config);
-	}
-	
 	private static IOSApplicationConfiguration createConfig() {
 		IOSApplicationConfiguration cfg = new IOSApplicationConfiguration();
 		cfg.orientationLandscape = true;
 		cfg.orientationPortrait = false;
 		return cfg;
+	}
+	
+	@Override
+	protected IOSApplication createApplication() {
+		return new IOSApplication((ApplicationListener) _game.stage, config);
 	}
 }
