@@ -1,4 +1,4 @@
-
+import java.text.SimpleDateFormat
 
 subprojects {
     apply plugin: "java"
@@ -23,5 +23,17 @@ subprojects {
 
     tasks.eclipse.doLast {
         delete ".project"
+    }
+
+    jar {
+        manifest {
+            attributes(
+                    "Specification-Title": "${project.name}",
+                    "Specification-Version": "${project.version}",
+                    "Specification-Vendor": "flixel-gdx team (https://github.com/flixel-gdx)",
+                    "Implementation-Vendor": "org.flixel",
+                    "Built-Date": new SimpleDateFormat("yyyy-MM-dd HH:mm:ss Z").format(new Date()),
+            )
+        }
     }
 }
