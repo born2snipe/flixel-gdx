@@ -1,7 +1,5 @@
 package org.flixel.client;
 
-import org.flixel.FlxGame;
-
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
@@ -15,6 +13,7 @@ import com.google.gwt.user.client.ui.InlineHTML;
 import com.google.gwt.user.client.ui.Panel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import org.flixel.FlxGame;
 
 public class FlxHtml5Application extends GwtApplication
 {

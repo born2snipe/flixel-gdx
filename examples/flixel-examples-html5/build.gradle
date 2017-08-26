@@ -1,0 +1,63 @@
+apply plugin: "gwt"
+apply plugin: "war"
+apply plugin: 'org.akhikhl.gretty'
+
+dependencies {
+    compile project(":flixel-html5")
+    compile project(":examples/flixel-examples-core")
+
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx-controllers:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx-controllers-gwt:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx-freetype:$gdxVersion:sources"
+    compile "org.mini2Dx:universal-tween-engine:$tweenVersion:sources"
+}
+
+gwt {
+    gwtVersion = '2.6.0' // Should match the gwt version used for building the gwt backend
+    maxHeapSize = "1G" // Default 256m is not enough for gwt compiler. GWT is HUNGRY
+    minHeapSize = "1G"
+
+    modules 'org.flixel.flixel_examples_html5'
+    project.webAppDirName = 'webapp'
+
+    compiler {
+        strict = true;
+        enableClosureCompiler = true;
+        disableCastChecking = true;
+    }
+}
+
+task addSource << {
+    def projectsToInclude = [
+            'flixel-core',
+            "flixel-html5",
+            'examples/flixel-examples-core'
+    ]
+
+    projectsToInclude.each {
+        sourceSets.main.compileClasspath += files(project(":$it").sourceSets.main.allJava.srcDirs)
+    }
+}
+
+tasks.compileGwt.dependsOn(addSource)
+tasks.draftCompileGwt.dependsOn(addSource)
+
+task dist(dependsOn: [clean, compileGwt]) {
+    doLast {
+        file("build/dist").mkdirs()
+        copy {
+            from "build/gwt/out"
+            into "build/dist"
+        }
+        copy {
+            from "webapp"
+            into "build/dist"
+        }
+        copy {
+            from "war"
+            into "build/dist"
+        }
+    }
+}

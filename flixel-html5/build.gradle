@@ -1,0 +1,7 @@
+dependencies {
+    compile project(":flixel-core")
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx:$gdxVersion:sources"
+    compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion"
+    compile "com.badlogicgames.gdx:gdx-backend-gwt:$gdxVersion:sources"
+}
