@@ -121,14 +121,16 @@ public class GdxStage extends EventDispatcher implements Stage, ApplicationListe
 
 	public static void hideMouse()
 	{
-		if(_blankCursor == null)
+		if(_blankCursor == null) {
 			_blankCursor = new Pixmap(16, 16, Pixmap.Format.RGBA8888);
-		Gdx.input.setCursorImage(_blankCursor, 0, 0);
+		}
+
+		Gdx.graphics.setCursor(Gdx.graphics.newCursor(_blankCursor, 0, 0));
 	}
 
 	public static void showMouse()
 	{
-		Gdx.input.setCursorImage(null, 0, 0);
+		Gdx.graphics.setCursor(Gdx.graphics.newCursor(null, 0, 0));
 	}
 
 	public GdxInput getInput()
