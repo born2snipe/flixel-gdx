@@ -15,9 +15,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lib.gdx.version>1.6.5</lib.gdx.version>
     </properties>
 
     <modules>
+        <module>flixel-core</module>
     </modules>
 
     <build>
