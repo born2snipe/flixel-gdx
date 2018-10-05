@@ -15,7 +15,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <lib.gdx.version>1.7.2</lib.gdx.version>
+        <lib.gdx.version>1.8.0</lib.gdx.version>
     </properties>
 
     <modules>
