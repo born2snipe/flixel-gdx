@@ -34,10 +34,4 @@
         </dependency>
     </dependencies>
 
-
-    <build>
-        <sourceDirectory>${project.basedir}/src</sourceDirectory>
-    </build>
-
-
 </project>
