@@ -217,7 +217,12 @@ public class GestureManager extends FlxBasic implements GestureListener
 		updateGestures(FlxGesture.PINCH, data);
 		return false;
 	}
-	
+
+	@Override
+	public void pinchStop() {
+		data.clear();
+	}
+
 	/**
 	 * Holds the gesture data
 	 */
