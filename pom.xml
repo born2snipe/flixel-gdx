@@ -20,6 +20,7 @@
 
     <modules>
         <module>flixel-core</module>
+        <module>flixel-desktop</module>
     </modules>
 
     <build>
