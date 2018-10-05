@@ -104,8 +104,8 @@ public class Lesson5 extends FlxState
 		blurShader.end();
 
 		// create our FBOs
-		blurTargetA = new FrameBuffer(Format.RGBA8888, FBO_SIZE, FBO_SIZE, false);
-		blurTargetB = new FrameBuffer(Format.RGBA8888, FBO_SIZE, FBO_SIZE, false);
+		blurTargetA = FrameBuffer.createFrameBuffer(Format.RGBA8888, FBO_SIZE, FBO_SIZE, false);
+		blurTargetB = FrameBuffer.createFrameBuffer(Format.RGBA8888, FBO_SIZE, FBO_SIZE, false);
 		fboRegion = new TextureRegion(blurTargetA.getColorBufferTexture());
 		fboRegion.flip(false, true);
 	}

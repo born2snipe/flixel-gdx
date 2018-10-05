@@ -59,9 +59,6 @@ public class GdxStage extends EventDispatcher implements Stage, ApplicationListe
 	@Override
 	public void create()
 	{
-		// Enable non power of two textures.
-		FileTextureData.copyToPOT = true;
-
 		// Set OpenGL features
 		//Gdx.gl.glHint(GL10.PER GL_PERSPECTIVE_CORRECTION_HINT, GL10.GL_FASTEST);
 		Gdx.gl.glDisable(GL20.GL_CULL_FACE);

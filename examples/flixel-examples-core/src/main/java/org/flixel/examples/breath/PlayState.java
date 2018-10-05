@@ -1,5 +1,8 @@
 package org.flixel.examples.breath;
 
+import com.badlogic.gdx.graphics.Pixmap;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
+import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import org.flixel.FlxG;
 import org.flixel.FlxGroup;
 import org.flixel.FlxObject;
@@ -8,10 +11,6 @@ import org.flixel.FlxSprite;
 import org.flixel.FlxState;
 import org.flixel.FlxText;
 import org.flixel.event.IFlxCamera;
-
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
-import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 
 public class PlayState extends FlxState {
     
@@ -61,8 +60,8 @@ public class PlayState extends FlxState {
     @Override 
     public void create() {
     	FlxG.setBgColor(Breath.bgcolor);
-    	
-    	frame_buffer = new FrameBuffer(Pixmap.Format.RGBA8888, FlxG.width, FlxG.height, true);
+
+    	frame_buffer = FrameBuffer.createFrameBuffer(Pixmap.Format.RGBA8888, FlxG.width, FlxG.height, true);
     	
         title_text = new FlxText(4, 24, 290, "\"I Can Hold My Breath Forever\"\nUse arrow keys to move.");
         title_text.setFormat(GardeniaFont, 8, 0xffffffff);
