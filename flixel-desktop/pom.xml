@@ -33,6 +33,7 @@
             <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx-controllers-platform</artifactId>
             <version>${lib.gdx.version}</version>
+            <classifier>natives-desktop</classifier>
         </dependency>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
