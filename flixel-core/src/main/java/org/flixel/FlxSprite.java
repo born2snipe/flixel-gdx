@@ -776,8 +776,6 @@ public class FlxSprite extends FlxObject
 	 */
 	public void stamp(Pixmap Brush,int SourceX,int SourceY,int SourceWidth,int SourceHeight,int DestinationX,int DestinationY)
 	{
-		Pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
-
 		TextureData textureData = null;
 		if(_newTextureData != null)
 			textureData = _newTextureData;
@@ -788,6 +786,7 @@ public class FlxSprite extends FlxObject
 			textureData.prepare();
 
 		Pixmap pixmap = textureData.consumePixmap();
+		pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
 
 		pixmap.drawPixmap(Brush, SourceX, SourceY, SourceWidth, SourceHeight, DestinationX, DestinationY, SourceWidth, SourceHeight);
 
@@ -807,9 +806,6 @@ public class FlxSprite extends FlxObject
 	 */
 	public void drawLine(float StartX,float StartY,float EndX,float EndY,int Color,int Thickness)
 	{
-		Pixmap.setBlending(Pixmap.Blending.SourceOver);
-		Pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
-
 		TextureData textureData = null;
 		if(_newTextureData != null)
 			textureData = _newTextureData;
@@ -823,6 +819,8 @@ public class FlxSprite extends FlxObject
 		int ry = _pixels.getRegionY();
 
 		Pixmap pixmap = textureData.consumePixmap();
+		pixmap.setBlending(Pixmap.Blending.SourceOver);
+		pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
 		pixmap.setColor(FlxU.argbToRgba(Color));
 		pixmap.drawLine((int) (rx + StartX), (int) (ry + StartY), (int) (rx + EndX), (int) (ry + EndY));
 
@@ -851,9 +849,6 @@ public class FlxSprite extends FlxObject
 	 */
 	public void fill(int Color)
 	{
-		Pixmap.setBlending(Pixmap.Blending.None);
-		Pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
-
 		TextureData textureData = null;
 		if(_newTextureData != null)
 			textureData = _newTextureData;
@@ -864,6 +859,8 @@ public class FlxSprite extends FlxObject
 			textureData.prepare();
 
 		Pixmap pixmap = textureData.consumePixmap();
+		pixmap.setBlending(Pixmap.Blending.None);
+		pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
 		pixmap.setColor(FlxU.argbToRgba(Color));
 		pixmap.fillRectangle(_pixels.getRegionX(), _pixels.getRegionY(), _pixels.getRegionWidth(), _pixels.getRegionHeight());
 
@@ -1091,9 +1088,6 @@ public class FlxSprite extends FlxObject
 		int rows = _pixels.getRegionHeight() + row;
 		int columns = _pixels.getRegionWidth() + _pixels.getRegionX();
 
-		Pixmap.setBlending(Pixmap.Blending.None);
-		Pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
-
 		TextureData textureData = null;
 		if(_newTextureData != null)
 			textureData = _newTextureData;
@@ -1104,6 +1098,8 @@ public class FlxSprite extends FlxObject
 			textureData.prepare();
 
 		Pixmap pixmap = textureData.consumePixmap();
+		pixmap.setBlending(Pixmap.Blending.None);
+		pixmap.setFilter(Pixmap.Filter.NearestNeighbour);
 
 		while(row < rows)
 		{
