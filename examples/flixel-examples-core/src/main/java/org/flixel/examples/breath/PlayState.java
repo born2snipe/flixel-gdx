@@ -61,7 +61,7 @@ public class PlayState extends FlxState {
     public void create() {
     	FlxG.setBgColor(Breath.bgcolor);
 
-    	frame_buffer = FrameBuffer.createFrameBuffer(Pixmap.Format.RGBA8888, FlxG.width, FlxG.height, true);
+    	frame_buffer = new FrameBuffer(Pixmap.Format.RGBA8888, FlxG.width, FlxG.height, true);
     	
         title_text = new FlxText(4, 24, 290, "\"I Can Hold My Breath Forever\"\nUse arrow keys to move.");
         title_text.setFormat(GardeniaFont, 8, 0xffffffff);
