@@ -21,6 +21,8 @@
     <modules>
         <module>flixel-core</module>
         <module>flixel-desktop</module>
+        <module>examples/flixel-examples-core</module>
+        <module>examples/flixel-examples-desktop</module>
     </modules>
 
     <build>
