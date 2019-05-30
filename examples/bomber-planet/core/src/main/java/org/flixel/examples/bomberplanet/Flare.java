@@ -1,6 +1,7 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxSprite;
 
 public class Flare extends FlxSprite
 {

@@ -1,8 +1,9 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
-
 import com.badlogic.gdx.utils.Array;
+import org.flixel.FlxG;
+import org.flixel.FlxSave;
+import org.flixel.FlxSprite;
 
 public class Powerup extends FlxSprite
 {

@@ -26,6 +26,8 @@
         <module>plugins/accelerometer</module>
         <module>examples/flixel-examples-core</module>
         <module>examples/flixel-examples-desktop</module>
+        <module>examples/bomber-planet/core</module>
+        <module>examples/bomber-planet/desktop</module>
     </modules>
 
     <build>

@@ -1,6 +1,8 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxSprite;
 
 public class Block extends FlxSprite
 {

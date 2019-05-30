@@ -1,6 +1,11 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxSave;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
+import org.flixel.FlxText;
 import org.flixel.event.IFlxCamera;
 
 public class MenuState extends FlxState

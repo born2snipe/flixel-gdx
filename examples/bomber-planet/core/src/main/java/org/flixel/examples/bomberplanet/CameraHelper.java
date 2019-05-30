@@ -1,8 +1,10 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
-
 import com.badlogic.gdx.utils.Array;
+import org.flixel.FlxG;
+import org.flixel.FlxPath;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSprite;
 
 public class CameraHelper extends FlxSprite
 {

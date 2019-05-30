@@ -1,6 +1,9 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
+import org.flixel.FlxText;
 import org.flixel.event.IFlxCamera;
 
 public class VictoryState extends FlxState

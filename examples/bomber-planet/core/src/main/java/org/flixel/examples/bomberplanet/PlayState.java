@@ -1,10 +1,18 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
-import org.flixel.event.IFlxObject;
-
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.IntArray;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
+import org.flixel.FlxObject;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSave;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
+import org.flixel.FlxTilemap;
+import org.flixel.FlxU;
+import org.flixel.event.IFlxObject;
 
 public class PlayState extends FlxState
 {

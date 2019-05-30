@@ -1,6 +1,6 @@
 package org.flixel.examples.bomberplanet;
 
-import org.flixel.*;
+import org.flixel.FlxGame;
 
 public class ESC extends FlxGame
 {
