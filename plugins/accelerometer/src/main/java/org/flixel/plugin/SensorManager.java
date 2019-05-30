@@ -1,9 +1,8 @@
 package org.flixel.plugin;
 
-import org.flixel.FlxBasic;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Orientation;
+import org.flixel.FlxBasic;
 
 /**
  * Keep track of the accelerometer and orientation of the device.

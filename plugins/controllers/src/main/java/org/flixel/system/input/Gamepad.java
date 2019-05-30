@@ -1,12 +1,11 @@
 package org.flixel.system.input;
 
-import org.flixel.FlxG;
-import org.flixel.FlxPoint;
-
 import com.badlogic.gdx.controllers.PovDirection;
 import com.badlogic.gdx.utils.IntMap;
 import com.badlogic.gdx.utils.ObjectIntMap;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
+import org.flixel.FlxG;
+import org.flixel.FlxPoint;
 
 /**
  * A gamepad with common buttons. Keeps track of what keys are pressed and how with handy booleans or strings.

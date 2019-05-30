@@ -19,11 +19,6 @@
         </dependency>
         <dependency>
             <groupId>com.badlogicgames.gdx</groupId>
-            <artifactId>gdx-controllers</artifactId>
-            <version>${lib.gdx.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.badlogicgames.gdx</groupId>
             <artifactId>gdx-freetype</artifactId>
             <version>${lib.gdx.version}</version>
         </dependency>

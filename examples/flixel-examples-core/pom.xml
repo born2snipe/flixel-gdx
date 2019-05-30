@@ -17,6 +17,21 @@
             <artifactId>flixel-gdx-core</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>flixel-gdx-controller-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>flixel-gdx-gesture-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>flixel-gdx-accelerometer-plugin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

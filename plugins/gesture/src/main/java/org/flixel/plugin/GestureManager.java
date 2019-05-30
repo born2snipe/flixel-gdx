@@ -1,14 +1,13 @@
 package org.flixel.plugin;
 
-import org.flixel.FlxBasic;
-import org.flixel.FlxG;
-import org.flixel.FlxGesture;
-import org.flixel.system.gdx.GdxStage;
-
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.input.GestureDetector.GestureListener;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.Array;
+import org.flixel.FlxBasic;
+import org.flixel.FlxG;
+import org.flixel.FlxGesture;
+import org.flixel.system.gdx.GdxStage;
 
 /**
  * A simple manager for tracking and updating gesture objects.

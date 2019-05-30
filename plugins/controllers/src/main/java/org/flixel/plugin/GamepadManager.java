@@ -1,10 +1,5 @@
 package org.flixel.plugin;
 
-import org.flixel.FlxBasic;
-import org.flixel.FlxG;
-import org.flixel.system.input.Gamepad;
-import org.flixel.system.input.GamepadMapping;
-
 import com.badlogic.gdx.controllers.Controller;
 import com.badlogic.gdx.controllers.ControllerListener;
 import com.badlogic.gdx.controllers.Controllers;
@@ -12,6 +7,10 @@ import com.badlogic.gdx.controllers.PovDirection;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
+import org.flixel.FlxBasic;
+import org.flixel.FlxG;
+import org.flixel.system.input.Gamepad;
+import org.flixel.system.input.GamepadMapping;
 
 /**
  * Manages the controllers and listen to input events.
