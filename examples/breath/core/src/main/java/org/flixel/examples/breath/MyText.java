@@ -1,6 +1,6 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxText;
 
 public class MyText extends FlxText {
 

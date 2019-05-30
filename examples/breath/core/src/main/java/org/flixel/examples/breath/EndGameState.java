@@ -1,6 +1,8 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
 
 public class EndGameState extends FlxState {
     

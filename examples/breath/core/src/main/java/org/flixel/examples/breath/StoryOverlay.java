@@ -1,6 +1,7 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
 
 public class StoryOverlay extends FlxGroup {
     

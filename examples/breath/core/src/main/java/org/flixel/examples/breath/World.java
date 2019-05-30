@@ -1,11 +1,14 @@
 package org.flixel.examples.breath;
 
+import com.badlogic.gdx.utils.Json;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
+import org.flixel.FlxObject;
+import org.flixel.FlxSprite;
+import org.flixel.FlxTilemap;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import org.flixel.*;
-
-import com.badlogic.gdx.utils.Json;
 
 public class World {
     

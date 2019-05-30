@@ -28,6 +28,8 @@
         <module>examples/flixel-examples-desktop</module>
         <module>examples/bomber-planet/core</module>
         <module>examples/bomber-planet/desktop</module>
+        <module>examples/breath/core</module>
+        <module>examples/breath/desktop</module>
     </modules>
 
     <build>

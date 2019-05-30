@@ -1,6 +1,10 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxObject;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSprite;
+import org.flixel.FlxTilemap;
 import org.flixel.event.IFlxCollision;
 
 public class Firefish extends FlxSprite {

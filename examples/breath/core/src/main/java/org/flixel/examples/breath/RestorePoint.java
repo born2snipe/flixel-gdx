@@ -1,6 +1,6 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxSprite;
 
 public class RestorePoint extends FlxSprite {
     

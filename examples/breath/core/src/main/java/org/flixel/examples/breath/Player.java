@@ -1,6 +1,8 @@
 package org.flixel.examples.breath;
 
-import org.flixel.*;
+import org.flixel.FlxG;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSprite;
 
 public class Player extends FlxSprite {
     
