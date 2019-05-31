@@ -194,23 +194,6 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>mode-pack-textures</id>
-                        <configuration>
-                            <includePluginDependencies>true</includePluginDependencies>
-                            <mainClass>com.badlogic.gdx.tools.texturepacker.TexturePacker</mainClass>
-                            <arguments>
-                                <argument>${project.basedir}/images/mode</argument>
-                                <argument>${project.build.outputDirectory}/examples/mode</argument>
-                                <argument>pack</argument>
-                                <argument>${project.basedir}/../pack.config.json</argument>
-                            </arguments>
-                        </configuration>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                    <execution>
                         <id>pathfinding-pack-textures</id>
                         <configuration>
                             <includePluginDependencies>true</includePluginDependencies>

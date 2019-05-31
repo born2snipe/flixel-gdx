@@ -1,6 +1,8 @@
 package org.flixel.examples.mode;
 
-import org.flixel.*;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSound;
+import org.flixel.FlxSprite;
 
 public class Bullet extends FlxSprite
 {

@@ -31,6 +31,8 @@
         <module>examples/bomber-planet/desktop</module>
         <module>examples/breath/core</module>
         <module>examples/breath/desktop</module>
+        <module>examples/mode/core</module>
+        <module>examples/mode/desktop</module>
     </modules>
 
     <build>

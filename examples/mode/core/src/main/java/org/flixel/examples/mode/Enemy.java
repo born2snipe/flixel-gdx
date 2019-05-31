@@ -1,6 +1,12 @@
 package org.flixel.examples.mode;
 
-import org.flixel.*;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSound;
+import org.flixel.FlxSprite;
+import org.flixel.FlxU;
 
 public class Enemy extends FlxSprite
 {

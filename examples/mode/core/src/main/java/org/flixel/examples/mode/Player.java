@@ -1,6 +1,11 @@
 package org.flixel.examples.mode;
 
-import org.flixel.*;
+import org.flixel.FlxButton;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
+import org.flixel.FlxSound;
+import org.flixel.FlxSprite;
 import org.flixel.event.IFlxButton;
 import org.flixel.ui.FlxVirtualPad;
 

@@ -1,13 +1,22 @@
 package org.flixel.examples.mode;
 
-import org.flixel.*;
+import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.Array;
+import org.flixel.FlxButton;
+import org.flixel.FlxCamera;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxGroup;
+import org.flixel.FlxObject;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
+import org.flixel.FlxText;
+import org.flixel.FlxTileblock;
 import org.flixel.event.IFlxCamera;
 import org.flixel.event.IFlxCollision;
 import org.flixel.ui.FlxVirtualPad;
-
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.utils.Array;
 
 public class PlayState extends FlxState
 {

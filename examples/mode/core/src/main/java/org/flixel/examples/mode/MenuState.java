@@ -1,5 +1,7 @@
 package org.flixel.examples.mode;
 
+import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
 import org.flixel.FlxButton;
 import org.flixel.FlxEmitter;
 import org.flixel.FlxG;
@@ -11,9 +13,6 @@ import org.flixel.event.IFlxButton;
 import org.flixel.event.IFlxCamera;
 import org.flixel.event.IFlxReplay;
 import org.flixel.ui.FlxVirtualPad;
-
-import com.badlogic.gdx.Application.ApplicationType;
-import com.badlogic.gdx.Gdx;
 
 public class MenuState extends FlxState
 {

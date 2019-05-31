@@ -1,10 +1,12 @@
 package org.flixel.examples.mode;
 
-import org.flixel.*;
-import org.flixel.event.IFlxCamera;
-
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxState;
+import org.flixel.FlxText;
+import org.flixel.event.IFlxCamera;
 
 public class VictoryState extends FlxState
 {
