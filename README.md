@@ -1,4 +1,4 @@
-![logo](https://i.imgur.com/IPkTFuN.gif)
+![logo](https://i.imgur.com/WRiVTnP.gif)
 
 ### What is flixel-gdx?
 flixel-gdx is an open source 2D game engine written in Java. Flixel-gdx is a port of AS3 [flixel](http://flixel.org) written by [Adam ‘Atomic’ Saltsman](http://adamatomic.com/) to the Java language. It is built on top of the powerful [libgdx](http://libgdx.badlogicgames.com/) framework which allows developers to build and distribute cross-platform games. The complex stuff like OpenGL ES is taken care by libgdx and flixel-gdx makes you creating games easy and fun.
