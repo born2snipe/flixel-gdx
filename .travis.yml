@@ -2,7 +2,7 @@ language: java
 
 sudo: required
 
-script: "mvn verify -T2"
+script: "./build.sh"
 
 jdk:
   - openjdk7
