@@ -1,3 +1,13 @@
 language: java
-install: ant -f fetch.xml
-script: ant
+
+sudo: required
+
+script: "mvn verify -T2"
+
+jdk:
+  - openjdk7
+
+cache:
+  directories:
+    - $HOME/.m2
+    - ~/.m2/repository
