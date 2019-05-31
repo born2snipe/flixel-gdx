@@ -24,6 +24,7 @@
         <module>flixel-android</module>
         <module>flixel-desktop</module>
         <module>flixel-html5</module>
+        <module>flixel-robovm</module>
         <module>plugins/controllers</module>
         <module>plugins/gesture</module>
         <module>plugins/accelerometer</module>
