@@ -13,7 +13,7 @@ import org.flixel.event.IFlxCollision;
  */
 public class PlayState extends Test
 {
-	private String ImgMap = "examples/controller/map.png";
+    private String ImgMap = "examples/controller/pack:map";
 	private String ImgTiles = "examples/controller/pack:tiles";
 	
 	private FlxTilemap level;

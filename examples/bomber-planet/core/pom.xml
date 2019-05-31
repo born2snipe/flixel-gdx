@@ -20,4 +20,32 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <includePluginDependencies>true</includePluginDependencies>
+                            <mainClass>com.badlogic.gdx.tools.texturepacker.TexturePacker</mainClass>
+                            <arguments>
+                                <argument>${project.basedir}/images</argument>
+                                <argument>${project.build.outputDirectory}/examples/bomberplanet/data</argument>
+                                <argument>pack</argument>
+                                <argument>${project.basedir}/../../pack.config.json</argument>
+                            </arguments>
+                        </configuration>
+                        <id>${project.artifactId}-pack-textures</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

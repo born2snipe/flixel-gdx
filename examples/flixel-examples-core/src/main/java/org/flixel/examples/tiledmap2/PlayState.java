@@ -1,5 +1,8 @@
 package org.flixel.examples.tiledmap2;
 
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.utils.JsonReader;
+import com.badlogic.gdx.utils.JsonValue;
 import org.flixel.FlxEmitter;
 import org.flixel.FlxG;
 import org.flixel.FlxSprite;
@@ -8,16 +11,12 @@ import org.flixel.FlxText;
 import org.flixel.FlxTilemap;
 import org.flixel.ui.FlxVirtualPad;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.utils.JsonReader;
-import com.badlogic.gdx.utils.JsonValue;
-
 public class PlayState extends FlxState
 {	
 	private static String MAP = "examples/tiledmap2/map01.json";
-	private static String ImgBG = "examples/tiledmap2/pack2:bg";
-	private static String ImgGibs = "examples/tiledmap2/pack2:gibs";
-	private static String ImgTiles = "examples/tiledmap2/pack2:tiles";
+    private static String ImgBG = "examples/tiledmap2/pack:bg";
+    private static String ImgGibs = "examples/tiledmap2/pack:gibs";
+    private static String ImgTiles = "examples/tiledmap2/pack:tiles";
 
 	private FlxTilemap _level;
 	private FlxVirtualPad _pad;

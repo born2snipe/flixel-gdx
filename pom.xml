@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -35,6 +36,19 @@
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.6.0</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>com.badlogicgames.gdx</groupId>
+                            <artifactId>gdx-tools</artifactId>
+                            <version>${lib.gdx.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
@@ -102,7 +116,9 @@
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                         <mavenExecutorId>forked-path</mavenExecutorId>
                         <useReleaseProfile>false</useReleaseProfile>
-                        <arguments>-Psonatype-oss-release -D=gpg.keyname=${env.MAVEN_PGP_KEYNAME} -Dgpg.passphrase=${env.MAVEN_PGP_PASSPHRASE}</arguments>
+                        <arguments>-Psonatype-oss-release -D=gpg.keyname=${env.MAVEN_PGP_KEYNAME}
+                            -Dgpg.passphrase=${env.MAVEN_PGP_PASSPHRASE}
+                        </arguments>
                     </configuration>
                 </plugin>
 
@@ -126,7 +142,7 @@
         <developer>
             <name>Dan Dudley</name>
             <email>born2snipe@gmail.com</email>
-            <organization />
+            <organization/>
             <organizationUrl>https://github.com/born2snipe</organizationUrl>
         </developer>
     </developers>

@@ -1,13 +1,21 @@
 package org.flixel.examples.flxcollisions;
 
-import org.flixel.*;
+import com.badlogic.gdx.utils.Array;
+import org.flixel.FlxButton;
+import org.flixel.FlxEmitter;
+import org.flixel.FlxG;
+import org.flixel.FlxObject;
+import org.flixel.FlxPath;
+import org.flixel.FlxPoint;
+import org.flixel.FlxSprite;
+import org.flixel.FlxState;
+import org.flixel.FlxText;
+import org.flixel.FlxTilemap;
 import org.flixel.event.IFlxButton;
 
-import com.badlogic.gdx.utils.Array;
-
 public class PlayState extends FlxState
-{	
-	private String ImgMap = "examples/flxcollisions/map.png";
+{
+    private String ImgMap = "examples/flxcollisions/pack:map";
 	private String ImgTiles = "examples/flxcollisions/pack:tiles";
 	private String ImgBG = "examples/flxcollisions/pack:bg";
 	private String ImgGibs = "examples/flxcollisions/pack:gibs";
