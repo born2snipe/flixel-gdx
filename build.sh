@@ -1,1 +1,1 @@
-./mvnw clean verify -T2
+./mvnw -Djava.awt.headless=true clean verify -T2
