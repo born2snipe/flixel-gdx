@@ -219,7 +219,6 @@
                             <configuration>
                                 <serverId>${sonatype.repo.id}</serverId>
                                 <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                                <skipStaging>true</skipStaging>
                             </configuration>
                             <executions>
                                 <execution>
