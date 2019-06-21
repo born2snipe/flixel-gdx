@@ -4,7 +4,7 @@
 flixel-gdx is an open source 2D game engine written in Java. Flixel-gdx is a port of AS3 [flixel](http://flixel.org) written by [Adam ‘Atomic’ Saltsman](http://adamatomic.com/) to the Java language. It is built on top of the powerful [libgdx](http://libgdx.badlogicgames.com/) framework which allows developers to build and distribute cross-platform games. The complex stuff like OpenGL ES is taken care by libgdx and flixel-gdx makes you creating games easy and fun.
 
 [![Build Status](https://img.shields.io/travis/born2snipe/flixel-gdx/master.svg?logo=travis&style=flat-square)](https://travis-ci.org/born2snipe/flixel-gdx)
-![Maven Central with version prefix filter](https://img.shields.io/maven-central/v/com.github.born2snipe/flixel-gdx-core/0.svg?style=flat-square)
+[![mavencentral](https://img.shields.io/maven-central/v/com.github.born2snipe/flixel-gdx-core/0.svg?style=flat-square)](https://search.maven.org/search?q=g:com.github.born2snipe%20AND%20a:flixel-gdx-core&core=gav)
 
 ### Links
 -	[flixel-gdx.com](http://flixel-gdx.com 'flixel-gdx homepage')
